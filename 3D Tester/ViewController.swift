@@ -57,11 +57,12 @@ class ViewController: UIViewController {
         
         percentLabel.text = percent
         
-        self.view.backgroundColor = UIColor(red: forceAmount, green: forceAmount, blue: forceAmount, alpha: 1).inverse()
+        let color = UIColor(red: forceAmount, green: forceAmount, blue: forceAmount, alpha: 1)
+        self.view.backgroundColor = color.inverse()
         
-        adviseLabel.textColor = UIColor(red: forceAmount, green: forceAmount, blue: forceAmount, alpha: 1)
-        percentLabel.textColor = UIColor(red: forceAmount, green: forceAmount, blue: forceAmount, alpha: 1)
-        
+        adviseLabel.textColor = color
+        percentLabel.textColor = color
+    
         setNeedsStatusBarAppearanceUpdate()
     }
     
